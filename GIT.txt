@@ -62,3 +62,48 @@ f1.txt                        git add ..         git commit -m ...
 
 git can't track empty folder.
 you can go back to previous versions or shift from version to another version using commit ID.
+
+
+
+
+Steps in git bash here to move the file from non staging area to staging area
+
+FATHIMATH SHABEEBA@LAPTOP-SS224LFG MINGW64 /c/DevOps (master)
+$ touch f3.txt
+
+FATHIMATH SHABEEBA@LAPTOP-SS224LFG MINGW64 /c/DevOps (master)
+$ git add .
+
+FATHIMATH SHABEEBA@LAPTOP-SS224LFG MINGW64 /c/DevOps (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f3.txt
+
+
+FATHIMATH SHABEEBA@LAPTOP-SS224LFG MINGW64 /c/DevOps (master)
+$ git commit -m "initial commit"
+[master 2020761] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f3.txt
+
+FATHIMATH SHABEEBA@LAPTOP-SS224LFG MINGW64 /c/DevOps (master)
+$ git log
+commit 2020761808e3f020c97d23de3e96084bd75c1f33 (HEAD -> master)
+Author: FathimaShabeeba28 <shebiikochikars3@gmail.com>
+Date:   Fri Mar 21 13:30:56 2025 +0530
+
+    initial commit
+
+commit 998273233a3b13398cb07389e21dda72f62f1442
+Author: FathimaShabeeba28 <shebiikochikars3@gmail.com>
+Date:   Fri Mar 21 13:24:04 2025 +0530
+
+    initial commit
+
+commit ac72827f6849d0ad5cf98b98f48a0b09a3873333
+Author: FathimaShabeeba28 <shebiikochikars3@gmail.com>
+Date:   Fri Mar 21 13:21:29 2025 +0530
+
+    initial commit
