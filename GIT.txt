@@ -1,0 +1,64 @@
+ls command to display the file.
+
+git init to initialize git.if we initialize git , then only files will be tracked by git.
+
+whenever you initialize git, you will create  hidden folder.
+ctrl + shift + ` shortcut to open terminal.
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ ls
+f1.txt
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git add f1.txt
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   f1.txt
+
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git commit -m "text file added."
+[master (root-commit) 5139a63] text file added.
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sneha@LAPTOP-87R32I6D MINGW64 ~/OneDrive/Documents/DEVOPS/workspace (master)
+$ git log
+commit 5139a63b1e8724980f6c2d4e35cce0bd54b61a2f (HEAD -> master)
+Author: SnehaNair3 <snehanairk369@gmail.com>
+Date:   Thu Mar 20 13:27:57 2025 +0530
+
+    text file added.
+
+
+
+Non staging area           staging area        commit
+f1.txt                        git add ..         git commit -m ...
+                                (copy)               (commit ID )
+
+git can't track empty folder.
+you can go back to previous versions or shift from version to another version using commit ID.
